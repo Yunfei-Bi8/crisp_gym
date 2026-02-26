@@ -40,7 +40,7 @@ class TeleopStreamedPose:
 
         self.node.create_subscription(
             Float32,
-            self._griper_topic,
+            self._gripper_topic,
             callback=self._callback_gripper,
             callback_group=ReentrantCallbackGroup(),
             qos_profile=qos_profile_sensor_data,
