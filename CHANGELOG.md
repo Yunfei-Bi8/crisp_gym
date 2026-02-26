@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.2.1](https://github.com/utiasDSL/crisp_gym/compare/v4.2.0...v4.2.1) (2026-02-26)
+
+
+### Bug Fixes
+
+* a ROS topic typo ([83ea86b](https://github.com/utiasDSL/crisp_gym/commit/83ea86bcbc9f4fd15ff2950ce21f900d6f7dc991))
+
 ## [4.2.0](https://github.com/utiasDSL/crisp_gym/compare/v4.1.1...v4.2.0) (2025-12-12)
 
 
