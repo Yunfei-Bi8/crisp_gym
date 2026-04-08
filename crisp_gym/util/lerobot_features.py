@@ -11,7 +11,6 @@ import gymnasium
 import numpy as np
 import rich
 
-from crisp_gym.envs.manipulator_env import ManipulatorBaseEnv, make_env
 from crisp_gym.util.control_type import ControlType
 
 try:
@@ -28,7 +27,7 @@ logger = logging.getLogger(__name__)
 
 
 def get_features(
-    env: ManipulatorBaseEnv,
+    env,
     use_video: bool = True,
     ignore_keys: list[str] = None,
 ) -> Dict[str, Dict]:
@@ -333,6 +332,7 @@ def numpy_obs_to_torch(obs: Dict[str, Any]) -> Dict[str, Any]:
 
 
 if __name__ == "__main__":
+    from crisp_gym.envs.manipulator_env import make_env
     env = make_env("right_aloha_franka")
     features = get_features(env, use_video=True)
 
